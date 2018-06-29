@@ -1,0 +1,46 @@
+.pin-caption {
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  line-height: 60px;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: table;
+  width: 100%;
+  height: 75px;
+  margin: 0 auto;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: white;
+  text-transform: uppercase;
+  .input-code {
+    display: table-cell;
+    vertical-align: middle;
+    height: 75px;
+    width: 35%;
+    font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .form-control { 
+    background: $transparent;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 75px;
+    border: none;
+    font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+}

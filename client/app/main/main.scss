@@ -1,0 +1,45 @@
+/* * * font * * */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* * * https://gist.github.com/jacrook/9009655 * * */
+$lato-font-stack: 'Lato', sans-serif !default;
+/* * * add custom background * * */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../assets/images/background.png');
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: flex;
+  color: white;
+  font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  letter-spacing: 2px;  
+}
+/* * * page transitions * * */
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* height of any screen */
+.full-screen {
+  height: 100%;
+  min-height: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

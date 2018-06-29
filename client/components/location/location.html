@@ -1,0 +1,53 @@
+<section class="section-wrapper">
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.back()" aria-label="back">
+          <img src="../assets/images/arrow-back.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- MAIN SECTION -->
+    <div class="section-row section-wallet">
+      <!-- PUB TABLE -->
+      <div class="pub-wrapper no-scroll">
+        <!-- TABLE ROW -->
+        <ul class="top-row">
+          <li class="row-wrapper">
+            <span class="header"> your location </span>
+          </li>
+        </ul>
+        <!-- TABLE ROW -->
+        <ul class="middle-row">
+          <li class="row-wrapper">
+            <span class="location-pin">
+              <img src="../assets/images/location-pin.png" alt="plus">
+            </span>
+          </li>
+        </ul>
+        <!-- TABLE ROW -->
+        <ul class="bottom-row">
+          <li class="row-wrapper">
+            <span class="description">
+              <p> confirm your location </p>
+              <p>
+                you must be in a participating pub to redeem your pint.
+                if you are not, the voucher is still valid for 7 days, 
+                so log back when you are  in a participating pub
+              </p>
+              <md-button class="btn-tiger-pubs" ng-click="$ctrl.locatePubsNearBy()" aria-label="gps"> done </md-button>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- PUB TABLE END -->
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row section-footer"> </div>
+  </div>
+</section>

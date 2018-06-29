@@ -1,0 +1,281 @@
+/* Smartphones ----------- */
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .tiger-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .uncage {
+    margin: 5px auto;
+    width: 90px;
+  }
+
+  .flex-item {
+    top: 5%;
+
+    &:before {
+      height: 0px;
+      margin-top: 10px;
+    }
+
+    &:after {
+      height: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .card {
+    background-size: 240px;
+
+    .card-content {
+
+      .lockup {
+        width: 120px;
+        height: auto;
+      }
+    }
+  }
+
+  .message {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .drink-aware {
+    width: 177px;
+    height: 24px;
+  }
+
+
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (min-device-height: 481px) and (max-device-height: 568px) {
+
+  .tiger-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .uncage {
+    margin: 5px auto;
+    width: 90px;
+  }
+
+  .flex-item {
+    top: 5%;
+
+    &:before {
+      height: 25px;
+    }
+
+    &:after {
+      height: 25px;
+    }
+  }
+
+  .card {
+    background-size: 240px;
+
+    .card-content {
+
+      .lockup {
+        width: 120px;
+        height: auto;
+      }
+    }
+  }
+
+  .message {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .drink-aware {
+    width: 177px;
+    height: 24px;
+  }
+
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+
+  .tiger-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .uncage {
+    margin: 10px auto;
+    width: 110px;
+  }
+
+  .flex-item {
+    top: 5%;
+
+    &:before {
+      height: 50px;
+    }
+
+    &:after {
+      height: 50px;
+    }
+  }
+
+  .card {
+    background-size: 320px;
+
+    .card-content {
+
+      .lockup {
+        width: 160px;
+        height: auto;
+      }
+    }
+  }
+
+  .message {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .drink-aware {
+    width: 187px;
+    height: 27px;
+  }
+
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 412px) and (max-device-height: 738px) {
+
+  .tiger-logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .uncage {
+    margin: 15px auto 0;
+    width: 120px;
+  }
+
+  .flex-item {
+    top: 5%;
+
+    &:before {
+      height: 50px;
+    }
+
+    &:after {
+      height: 50px;
+    }
+  }
+
+  .card {
+    background-size: 340px;
+
+    .card-content {
+
+      .lockup {
+        width: 170px;
+        height: auto;
+      }
+    }
+  }
+
+  .message {
+    width: 60%;
+    margin: 15px auto;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .drink-aware {
+    width: 187px;
+    height: 27px;
+  }
+
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+
+
+    .tiger-logo {
+      margin-top: 17px;
+      margin-bottom: 17px;
+    }
+
+    .logo {
+      width: 85px;
+    }
+
+    .uncage {
+      margin: 8px auto;
+      width: 107px;
+    }
+
+    .flex-item {
+      top: 5%;
+
+      &:before {
+        height: 45px;
+      }
+
+      &:after {
+        height: 45px;
+      }
+    }
+
+    .card {
+      background-size: 320px;
+
+      .card-content {
+
+        .lockup {
+          width: 160px;
+          height: auto;
+        }
+      }
+    }
+
+    .message {
+      width: 60%;
+      margin: 15px auto;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .drink-aware {
+      width: 177px;
+      height: 24px;
+    }
+
+
+}

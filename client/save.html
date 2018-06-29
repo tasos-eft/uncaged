@@ -1,0 +1,158 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title>Introducing Tiger Uncage Originals</title>
+    <meta name="description" content="Create original artwork from your unique data and uncage a complimentary pint of Tiger beer at uncage.ie">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta property="og:title" content="Introducing Tiger Uncage Originals">
+    <meta property="og:site_name" content="Uncage.ie">
+    <meta property="og:description" content="Create original artwork from your unique data and uncage a complimentary pint of Tiger beer at uncage.ie">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uncage.ie">
+    <meta property="og:image" content="https://uncage.ie/img/FB-link-large-text.png">
+
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Firefox, Opera  -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->    
+
+    <style>
+      body {
+        background-color: #021944;
+      }
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 7]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+
+    <section id="share" class="section-wrapper">
+
+      <div class="section-container">
+        <!-- MENU -->
+        <div class="section-row section-menu">
+          <div class="menu-wrapper">
+            <md-button id="home" type="button" class="home" aria-label="home">
+              <img src="../assets/images/home.png">
+            </md-button>
+            <md-button id="wallet" type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+              <img src="../assets/images/wallet.svg">
+              <img class="wallet-notification" src="../assets/images/notification.png">
+            </md-button>
+          </div>
+        </div>
+        <!-- TITLE -->
+        <div class="section-row section-title">
+          <h3>step three</h3>
+        </div>
+        <!-- IMAGE -->
+        <div class="section-row section-art art-btn">
+          <figure id="gen-art">
+            <img id="art" class="art-image" alt="art">
+          </figure>
+        </div>
+        <!-- CODE DETAILS -->
+        <div class="section-row section-description">
+          <span class="description">Perfect, You can now enjoy your complimentary pint of tiger beer </span>
+        </div>
+        <!-- NAVIGATION -->
+        <div id="done" class="section-row section-nav-buttons">
+            <button class="btn-tiger-md" aria-label="wallet">
+              done
+            </button>
+        </div>
+        <!-- FOOTER -->
+        <div class="section-row section-footer share-footer"> </div>
+
+      </div>
+
+    </section>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TL3MTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer'
+            ? '&l=' + l
+            : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TL3MTQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- GA -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-81497329-1', 'auto');
+    </script>
+    <!-- END GA -->
+
+    <!-- mouseflow -->
+    <script type="text/javascript">
+      var _mfq = _mfq || [];
+      (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript";
+        mf.async = true;
+        mf.src = "//cdn.mouseflow.com/projects/3511a0e9-5c60-4197-b259-41dd32d2f30e.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+    <!-- end mouseflow -->
+
+    <script>
+    $( "#home" ).click(function() {
+      window.location.href = 'https://uncage.ie/home';
+    });
+
+    $( "#wallet" ).click(function() {
+      window.location.href = 'https://uncage.ie/wallet';
+    });
+
+    var currentURL = window.location.href;
+    var name = window.location.search.slice(1);
+    var imageURL = 'https://uncage.ie/img/generative/' + name + '/' + name + '.gen-art.png';
+    $('#art').attr('src', imageURL);
+
+    $( "#done" ).click(function() {
+      console.log('done');
+      window.location.href = 'https://uncage.ie/share';
+    });
+    </script>
+
+  </body>
+</html>

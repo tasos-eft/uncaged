@@ -1,0 +1,50 @@
+<section class="section-wrapper">
+
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- MAIN SECTION -->
+    <div id="wallet" class="section-row section-wallet">
+      <div class="wallet-wrap">
+        <!-- LOGO -->
+        <div class="wallet-logo">
+          <img src="../assets/images/Logo.png">
+        </div>
+        <!-- HEADER -->
+        <div class="wallet-header">wallet</div>
+        <!-- CAPTION -->
+        <div class="wallet-caption">
+          <p>
+            you must be in a participating pub to redeem your pint. if you are not,
+            the voucher is still valid for 7 days, so log back when you are
+            in a participating pub
+          </p>
+        </div>
+        <!-- BUTTONS -->
+        <div class="wallet-buttons">
+          <md-button class="btn-tiger-pubs" ng-click="$ctrl.toLocation($event)">
+            use your location
+          </md-button>
+          <md-button class="btn-tiger-pubs" ng-click="$ctrl.toPubs($event)">
+            choose from a list
+          </md-button>
+        </div>
+
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row wallet-footer"> </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,48 @@
+<section class="section-wrapper">
+
+  <div id="redeem" class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="redeem-home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="redeem-wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="section-row redeem-title">
+      <h3>wallet</h3>
+    </div>
+    <!-- IMAGE -->
+    <div class="section-row middle-wrap">
+
+      <h4> tiger beer token </h4>
+
+      <h5> in {{$ctrl.pub.name}} </h5>
+
+      <div class="pint">
+        <img class="" src="../assets/images/tiger-pint.png">
+      </div>
+
+      <div class="redeem-action">
+        <div class="wrapper-center">
+          <md-button class="btn-center" ng-click="$ctrl.showConfirm( $event )" ng-disabled="$ctrl.couponRedeemed" aria-label="redeem">
+            redeem
+          </md-button>
+        </div>
+      </div>
+
+      <div id="drink-aware" ng-click="$ctrl.move()"> </div>
+    </div>
+    <!-- NAVIGATION -->
+    <!-- FOOTER -->
+
+    <div class="section-row section-footer">      </div>
+
+  </div>
+    
+</section>

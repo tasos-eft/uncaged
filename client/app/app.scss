@@ -1,0 +1,36 @@
+/* * * App-wide Styles * * */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// Component styles are injected through grunt
+/* inject:scss */
+@import 'grip';
+@import 'main/dialogs';
+@import 'main/main';
+@import '../components/age-gate/agegate';
+@import '../components/art/art';
+@import '../components/empty-wallet/empty-wallet';
+@import '../components/fb-login/fblogin';
+@import '../components/location/location';
+@import '../components/phone/phone';
+@import '../components/pin/pin';
+@import '../components/pubs/pubs';
+@import '../components/redeem/redeem';
+@import '../components/revisit/revisit';
+@import '../components/share/share';
+@import '../components/steps/steps';
+@import '../components/tickets/tickets';
+@import '../components/wallet/wallet';
+@import '../components/zen.media/mobiles';
+@import '../components/zen.media/pads';
+/* endinject */
+
+/* zen media should load last */

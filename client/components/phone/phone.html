@@ -1,0 +1,64 @@
+<section id="phone" class="section-wrapper">
+
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+        </md-button>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="section-row section-title">
+      <h3>step two</h3>
+    </div>
+    <!-- IMAGE -->
+    <div class="section-row section-art">
+      <figure id="gen-art">
+        <img class="art-image" alt="art" ng-src="{{$ctrl.imgPath}}">
+      </figure>
+    </div>
+    <!-- PHONE DETAILS -->
+    <div class="section-row section-caption">
+      <span class="phone-caption">add your phone number so we can reward you with your complimentary pint </span>
+
+      <div class="input-table">
+        <span class="input-cell phone">phone:</span>
+        <span class="input-cell provider">
+          <select ng-model="$ctrl.selectedProvider" ng-change="$ctrl.changeProviders($ctrl.selectedProvider)">
+            <option ng-repeat="p in $ctrl.providers" value="{{p.code}}">{{p.code}}</option>
+          </select>
+        </span>
+        <span class="input-cell validator">
+          <input limit="7" type="tel" class="form-control glowing-border"
+                 min="0" max="9999999" autofocus
+                 ng-model="$ctrl.phoneNumber" placeholder="PHONE"
+                 ng-change="$ctrl.phoneFormation($ctrl.phoneNumber)"/>
+        </span>
+      </div>
+
+      <div class="sing-up">
+        <md-checkbox class="agree blue" ng-model="$ctrl.agree" aria-label="terms & conditions">
+          by signing up, I agree to heineken's
+          <a href="#" ng-click="$ctrl.termsModal()">terms & conditions</a>
+          and
+          <a href="#" ng-click="$ctrl.policyModal()"> privacy policy</a>
+        </md-checkbox>
+      </div>
+    </div>
+    <!-- NAVIGATION -->
+    <div class="section-row section-nav" ng-show="$ctrl.validForm()">
+      <md-button type="button" class="arrow" ng-click="$ctrl.setUser()" aria-label="user">
+        <img src="../assets/images/arrow-next.png">
+      </md-button>
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row section-footer"> </div>
+
+  </div>
+
+</section>

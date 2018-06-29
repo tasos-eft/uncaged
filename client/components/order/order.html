@@ -1,0 +1,70 @@
+<section id="order" class="section-wrapper">
+
+  <div id="redeem" class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="redeem-home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="redeem-wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="section-row redeem-title">
+      <h3>wallet</h3>
+    </div>
+    <!-- IMAGE -->
+    <div class="section-row middle-wrap">
+      <h4>
+        tiger beer token
+      </h4>
+      <h5>
+        in
+        {{$ctrl.pub.name}}
+      </h5>
+
+      <div class="redeemed">
+        <div class="date">
+          date:
+          {{ $ctrl.datestamp | date:'dd/MM/yyyy' }}
+          time:
+          {{ $ctrl.datestamp | date:'HH:mm:ss' }}
+        </div>
+        <div class="clock">
+          <span>
+            <timer class="clock-table" interval="1000" countdown="120" finish-callback="$ctrl.final()">
+             <span class="clock-cell-lg"> {{minutes  | digits:2 }}</span>
+             <span class="clock-cell-sm"> : </span>
+             <span class="clock-cell-lg"> {{seconds  | digits:2 }}</span>
+           </timer>
+            <!-- <div id="countdown"></div> -->
+
+            <!-- {{$ctrl.minutes  | digits:2 }} : {{$ctrl.seconds  | digits:2 }} -->
+            <!-- <timer ng-show="$ctrl.finalCountDown" interval="1000" countdown="$ctrl.finalCountDown">{{countdown}}</timer> -->
+          </span>
+        </div>
+        <div class="message">
+          token expires in two minutes. show this to the barman to redeem your pint
+        </div>
+      </div>
+
+      <div class="redeem-action">
+        <div class="wrapper-center">
+          <md-button class="btn-center" ng-click="$ctrl.final()">
+            done
+          </md-button>
+        </div>
+      </div>
+      <div id="drink-aware" ng-click="$ctrl.move()"> </div>
+    </div>
+    <!-- NAVIGATION -->
+    <!-- FOOTER -->
+    <div class="section-row section-footer"></div>
+
+  </div>
+
+</section>

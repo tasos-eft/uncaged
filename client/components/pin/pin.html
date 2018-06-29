@@ -1,0 +1,46 @@
+<section id="pin" class="section-wrapper">
+
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+        </md-button>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="section-row section-title">
+      <h3>step two</h3>
+    </div>
+    <!-- IMAGE -->
+    <div class="section-row section-art">
+      <figure id="gen-art">
+        <img class="art-image" alt="art" ng-src="{{$ctrl.imgPath}}">
+      </figure>
+    </div>
+    <!-- CODE DETAILS -->
+    <div class="section-row section-caption">
+      <span class="pin-caption">we just sent you a text with your code  </span>
+      <div class="input-group">
+        <!-- <span class="input-code">code:</span> -->
+        <input limit="4" type="tel" class="form-control glowing-border"
+               autofocus min="0" max="9999" placeholder="ENTER CODE HERE"
+               ng-model="$ctrl.pin" ng-change="$ctrl.pinValidation($ctrl.pin)"/>
+      </div>
+    </div>
+    <!-- NAVIGATION -->
+    <div class="section-row section-nav" ng-show="$ctrl.showArrow">
+      <md-button type="button" ng-click="$ctrl.nextScreen()" class="arrow" aria-label="next">
+          <img src="../assets/images/arrow-next.png">
+      </md-button>
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row section-footer"> </div>
+
+  </div>
+
+</section>

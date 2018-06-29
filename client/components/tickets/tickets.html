@@ -1,0 +1,42 @@
+<section class="section-wrapper">
+
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- TITLE -->
+    <div class="section-row section-title">
+      <h3>THANK YOU</h3>
+    </div>
+    <!-- IMAGE -->
+    <div class="section-row section-art art-btn">
+      <md-button class="btn-download" ng-click="$ctrl.message()" aria-label="message"></md-button>
+      <figure id="gen-art">
+        <img class="art-image" alt="art" ng-src="{{$ctrl.imgPath}}">
+      </figure>
+    </div>
+    <!-- CODE DETAILS -->
+    <div class="section-row section-description tickets-padding">
+      <span class="description">Share your Tiger Originals art piece with your friends</span>
+    </div>
+    <!-- NAVIGATION -->
+    <div class="section-row section-nav-buttons">
+        <md-button id="ticket-btn-{{$ctrl.facebookID}}" class="btn-tickets" ng-click="$ctrl.shareUI()" aria-label="share">
+          <span id="ticket-text-{{$ctrl.facebookID}}"> share on facebook </span>
+        </md-button>
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row section-footer share-footer"> </div>
+
+  </div>
+
+</section>

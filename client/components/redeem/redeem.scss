@@ -1,0 +1,151 @@
+.redeem-title {
+  h3 {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    font-size: 17px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+.middle-wrap {
+  background: url('../assets/images/bg-token.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 722px;
+  color: rgb(5, 45, 105);
+  text-transform: uppercase;
+  text-align: center;
+  h4 {
+    padding-top: 8%;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  h5 {
+    padding-top: 3%;
+    font-size: 22px;
+    font-weight: 900;
+    margin: auto;
+  }
+  .pint {
+    display: block;
+    margin: 5% auto;
+    height: 50%;
+    img {
+      width: 190px;
+      height: auto;
+    }
+  }
+  .redeem-action {
+    position: relative;
+    top: 0%;
+    width: 340px;
+    height: 70px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    // vertical-align: middle;
+    /* left button */
+    .wrapper-center {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* button */
+    .btn-center {
+      background-color: $tiger-yellow;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        cursor: pointer;
+        color: $tiger-yellow;
+      }
+    }
+  }
+  .redeemed {
+    display: block;
+    margin: 5% auto;
+    height: 50%;
+    .date {
+      font-size: 14px;
+      padding-top: 20px;
+      margin: 2% auto;
+      font-weight: bold;
+    }
+    .clock {
+      margin: 20px auto;
+      font-size: 92px;
+      font-weight: 900;
+      color: $tiger-yellow;
+      .clock-table {
+        display: table;
+        width: 65%;
+        height: 100%;
+        margin: auto;
+        .clock-cell-lg {
+          display: table-cell;
+          width: 45%;
+          height: 100%;
+          vertical-align: middle;
+        }
+        .clock-cell-sm {
+          display: table-cell;
+          width: 10%;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+    .message {
+      width: 50%;
+      margin: 4% auto;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+.bottom-wrap {
+  width: 100vw;
+  height: 10%;
+  .vertical-line {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid rgba(239, 239, 239, 0.7);
+  }
+}
+
+div#drink-aware {
+  background-image: url('../assets/images/drinkAware.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:center center;
+  background-color: $transparent;
+  position: relative;
+  display: block;
+  top: 6%;
+  left: 0%;
+  right: 0%;
+  width: 280px;
+  height: 35px;
+  margin: auto;
+  opacity: 0.75;
+  @include transition($hover-slow);
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

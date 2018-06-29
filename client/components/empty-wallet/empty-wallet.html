@@ -1,0 +1,45 @@
+<section class="section-wrapper">
+
+  <div class="section-container">
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.home()" aria-label="home">
+          <img src="../assets/images/home.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+        </md-button>
+      </div>
+    </div>
+    <!-- MAIN SECTION -->
+    <div class="section-row section-wallet">
+      <div class="wallet-wrap">
+        <!-- LOGO -->
+        <div class="wallet-logo">
+          <img src="../assets/images/Logo.png">
+        </div>
+        <!-- HEADER -->
+        <div class="wallet-header ew-top">welcome {{$ctrl.facebookName}} </div>
+        <!-- CAPTION -->
+        <div class="wallet-caption ew-middle">
+          <p>
+            your unique piece of art & complimentary pint
+            are just a few steps away
+          </p>
+        </div>
+        <!-- BUTTONS -->
+        <div class="wallet-buttons">
+          <md-button class="btn-tiger-pubs" ng-click="$ctrl.art()">
+            create unique art
+          </md-button>
+        </div>
+
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row wallet-footer"> </div>
+
+  </div>
+
+</section> 

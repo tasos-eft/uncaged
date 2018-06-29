@@ -1,0 +1,43 @@
+<section id="pubs" class="section-wrapper">
+  <div id="spinner" ng-hide="$ctrl.pubCookie"> </div>
+  <div class="section-container" ng-show="$ctrl.pubCookie" ng-cloak>
+    <!-- MENU -->
+    <div class="section-row section-menu">
+      <div class="menu-wrapper">
+        <md-button type="button" class="home" ng-click="$ctrl.back()" aria-label="back">
+          <img src="../assets/images/arrow-back.png">
+        </md-button>
+        <md-button type="button" class="wallet" ng-click="$ctrl.wallet()" aria-label="wallet">
+          <img src="../assets/images/wallet.svg">
+          <img ng-show="$ctrl.WILcoupon" class="wallet-notification" src="../assets/images/notification.png">
+        </md-button>
+      </div>
+    </div>
+    <!-- MAIN SECTION -->
+    <div class="section-row section-wallet">
+      <!-- PUB TABLE -->
+      <div id="pub-list" class="pub-wrapper">
+        <!-- TABLE ROW -->
+        <div class="pub-title">
+          <h3> choose your pub </h3>
+        </div>
+        <!-- TABLE ROW -->
+        <div class="pub-scroll" infinite-scroll="$ctrl.loadMorePubs()" infinite-scroll-parent="true" infinite-scroll-distance="0">
+
+          <div class="pub-row" ng-repeat="pub in $ctrl.pubList">
+            <md-button class="pub-button" ng-click="$ctrl.roadToRedemption(pub.id)">
+                <span class="pub-name"> {{pub.name}} </span>
+                <span class="pub-sign"> <img src="../assets/images/plus.png" alt="plus"> </span>
+            </md-button>
+
+          </div>
+        </div>
+
+        <!-- scroll? -->
+      </div>
+      <!-- PUB TABLE END -->
+    </div>
+    <!-- FOOTER -->
+    <div class="section-row section-footer"> </div>
+  </div>
+</section>

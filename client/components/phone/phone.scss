@@ -1,0 +1,142 @@
+.phone-caption {
+  display: block;
+  font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  line-height: 1.2;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 25px auto;
+}
+
+.input-table {
+  display: table;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 5px;
+  padding-right: 0;
+  padding-left: 0;
+  border-collapse: separate;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  border-left: none;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  .input-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    select {
+      background: transparent url('../assets/images/arrow-scroll.png') no-repeat;
+      background-size: 22px;
+      background-position:  right center;
+      width: 85px;
+      height: auto;
+      margin: 0 auto;
+      padding-left: 10px;
+      border: 0;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: white;
+      option {
+        background: #777777;
+        padding: 2%;
+        text-shadow:0 1px 0 rgba(0,0,0,0.4);
+        font-size: 17px;
+        text-transform: uppercase;
+      }
+    }
+    input[readonly] {
+      color: $tiger-yellow;
+    }
+    .form-control {
+      background: transparent;
+      width: 180px;
+      height: 50px;
+      //border: none;
+      padding: 0;
+      color: white;
+      text-align: left;
+      font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+      font-size: 36px;
+      background: 0 0;
+      border: none;
+      text-align: center;
+    }
+  }
+  .phone {
+    width: 90px;
+    font-size: 16px;
+    font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  }
+  .provider {
+    width: 90px;
+  }
+  .validator {
+    width: 170px;
+  }
+}
+
+.sing-up {
+  max-height: 30px;
+  .agree {
+    font-family: Arquitecta,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+md-checkbox {
+
+  .md-ripple {
+    color: white;
+  }
+  &.md-checked .md-ripple {
+    background-color: white;
+    color: white;
+  }
+
+  &.md-checked .md-ink-ripple {
+    color: white;
+  }
+
+  &:not(.md-checked) .md-icon {
+    border-color: white;
+  }
+
+  &.md-checked .md-icon {
+    border-color: white;
+    background-color: rgba(173, 216, 230, 0.87);
+  }
+
+  &.md-checked .md-icon:after {
+    border-color: white;
+  }
+}
+
+.glowing-border {
+    border-top: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-radius: 1px;
+}
+
+.glowing-border:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #9ecaed;
+}

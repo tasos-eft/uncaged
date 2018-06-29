@@ -1,0 +1,55 @@
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1600px)  {
+
+    .tiger-logo {
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      width: 110px;
+    }
+
+    .uncage {
+      margin: 15px auto 0;
+      width: 130px;
+    }
+
+    .flex-item {
+      top: 5%;
+
+      &:before {
+        height: 70px;
+      }
+
+      &:after {
+        height: 70px;
+      }
+    }
+
+    .card {
+      background-size: 360px;
+
+      .card-content {
+
+        .lockup {
+          width: 180px;
+          height: auto;
+        }
+      }
+    }
+
+    .message {
+      width: 40%;
+      max-width: 350px;
+      margin: 20px auto;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .drink-aware {
+      width: 212px;
+      height: 30px;
+    }
+
+}
